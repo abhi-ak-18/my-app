@@ -9,7 +9,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 export default function App() {
@@ -21,10 +20,10 @@ export default function App() {
     <div className='container'>
 
     <Switch>
-          <Route path="/about">
+          <Route exact path="/about">
             <About />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
           <TextForm heading="Enter the text to analyze below:"/>
           </Route>
     </Switch>
